@@ -1,0 +1,42 @@
+[2024/10/27 23:33:48] ===============================================
+[2024/10/27 23:33:48] ===== Ventoy2Disk 1.0.99 127.0.0.1:24680 =====
+[2024/10/27 23:33:48] ===============================================
+[2024/10/27 23:33:48] ventoy_disk_enumerate_all
+[2024/10/27 23:33:48] get disk info nvme0n1
+[2024/10/27 23:33:48] is 4k native disk <nvme0n1> <0>
+[2024/10/27 23:33:48] get disk size from sysfs for nvme0n1
+[2024/10/27 23:33:48] /sys/block/nvme0n1/device/vendor not exist 
+[2024/10/27 23:33:48] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/10/27 23:33:48] Invalid efi part2 name <>
+[2024/10/27 23:33:48] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/10/27 23:33:48] /dev/nvme0n1 NO Ventoy detected
+[2024/10/27 23:33:48] get disk info sda
+[2024/10/27 23:33:48] is 4k native disk <sda> <0>
+[2024/10/27 23:33:48] get disk size from sysfs for sda
+[2024/10/27 23:33:48] ventoy_get_vtoy_data /dev/sda
+[2024/10/27 23:33:48] ventoy partition layout check OK: [2048 120096768] [120098816 65536]
+[2024/10/27 23:33:48] now check secure boot for /dev/sda ...
+[2024/10/27 23:33:49] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2024/10/27 23:33:49] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/10/27 23:33:49] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
+[2024/10/27 23:33:49] ============= DISK DUMP ============
+[2024/10/27 23:33:49] /dev/sda [64 GB]  USB  SanDisk 3.2Gen1 (USB)	Ventoy: 1.0.99 MBR secureboot:1 preserve:0
+[2024/10/27 23:33:49] /dev/nvme0n1 [512 GB]  SAMSUNG MZ9LQ512HBLU-00B (nvme)	Ventoy: NA
+[2024/10/27 23:34:07] ventoy_disk_enumerate_all
+[2024/10/27 23:34:07] get disk info nvme0n1
+[2024/10/27 23:34:07] is 4k native disk <nvme0n1> <0>
+[2024/10/27 23:34:07] get disk size from sysfs for nvme0n1
+[2024/10/27 23:34:07] /sys/block/nvme0n1/device/vendor not exist 
+[2024/10/27 23:34:07] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/10/27 23:34:07] Invalid efi part2 name <>
+[2024/10/27 23:34:07] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/10/27 23:34:07] /dev/nvme0n1 NO Ventoy detected
+[2024/10/27 23:34:07] get disk info sda
+[2024/10/27 23:34:07] is 4k native disk <sda> <0>
+[2024/10/27 23:34:07] get disk size from sysfs for sda
+[2024/10/27 23:34:07] ventoy_get_vtoy_data /dev/sda
+[2024/10/27 23:34:07] ventoy partition layout check OK: [2048 120096768] [120098816 65536]
+[2024/10/27 23:34:07] now check secure boot for /dev/sda ...
+[2024/10/27 23:34:07] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2024/10/27 23:34:07] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/10/27 23:34:07] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
