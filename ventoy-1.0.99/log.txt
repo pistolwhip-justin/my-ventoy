@@ -40,3 +40,4 @@
 [2024/10/27 23:34:07] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
 [2024/10/27 23:34:07] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
 [2024/10/27 23:34:07] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
+[2024/10/28 03:16:33] ventoy server exit due to signal ...
