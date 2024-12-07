@@ -83,3 +83,258 @@
 [2024/10/30 00:20:58] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
 [2024/10/30 00:20:58] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
 [2024/10/30 00:20:58] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
+[2024/11/05 10:31:40] ===============================================
+[2024/11/05 10:31:40] ===== Ventoy2Disk 1.0.99 127.0.0.1:24680 =====
+[2024/11/05 10:31:40] ===============================================
+[2024/11/05 10:31:40] ventoy_disk_enumerate_all
+[2024/11/05 10:31:40] get disk info nvme0n1
+[2024/11/05 10:31:40] is 4k native disk <nvme0n1> <0>
+[2024/11/05 10:31:40] get disk size from sysfs for nvme0n1
+[2024/11/05 10:31:40] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/05 10:31:40] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/05 10:31:40] Invalid efi part2 name <>
+[2024/11/05 10:31:40] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/05 10:31:40] /dev/nvme0n1 NO Ventoy detected
+[2024/11/05 10:31:40] get disk info sda
+[2024/11/05 10:31:40] is 4k native disk <sda> <0>
+[2024/11/05 10:31:40] get disk size from sysfs for sda
+[2024/11/05 10:31:40] ventoy_get_vtoy_data /dev/sda
+[2024/11/05 10:31:40] NO ventoy efi part layout <0 0>
+[2024/11/05 10:31:40] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/05 10:31:40] /dev/sda NO Ventoy detected
+[2024/11/05 10:31:40] ============= DISK DUMP ============
+[2024/11/05 10:31:40] /dev/sda [64 GB]  USB  SanDisk 3.2Gen1 (USB)	Ventoy: NA
+[2024/11/05 10:31:40] /dev/nvme0n1 [512 GB]  SAMSUNG MZ9LQ512HBLU-00B (nvme)	Ventoy: NA
+[2024/11/05 10:32:04] ventoy_disk_enumerate_all
+[2024/11/05 10:32:04] get disk info nvme0n1
+[2024/11/05 10:32:04] is 4k native disk <nvme0n1> <0>
+[2024/11/05 10:32:04] get disk size from sysfs for nvme0n1
+[2024/11/05 10:32:04] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/05 10:32:04] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/05 10:32:04] Invalid efi part2 name <>
+[2024/11/05 10:32:04] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/05 10:32:04] /dev/nvme0n1 NO Ventoy detected
+[2024/11/05 10:32:04] get disk info sda
+[2024/11/05 10:32:04] is 4k native disk <sda> <0>
+[2024/11/05 10:32:04] get disk size from sysfs for sda
+[2024/11/05 10:32:04] ventoy_get_vtoy_data /dev/sda
+[2024/11/05 10:32:04] NO ventoy efi part layout <0 0>
+[2024/11/05 10:32:04] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/05 10:32:04] /dev/sda NO Ventoy detected
+[2024/11/05 10:32:25] ==================================================================================
+[2024/11/05 10:32:25] ===== ventoy install /dev/sda style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2024/11/05 10:32:25] ==================================================================================
+[2024/11/05 10:32:25] disk is not mounted now, we can do the install ...
+[2024/11/05 10:32:25] start install thread  USB  SanDisk 3.2Gen1 (USB) ...
+[2024/11/05 10:32:25] ventoy_install_thread run ...
+[2024/11/05 10:32:25] check disk sda
+[2024/11/05 10:32:25] disk is not mounted now, we can do continue ...
+[2024/11/05 10:32:25] ventoy_clean_disk fd:5 size:61524148224
+[2024/11/05 10:32:25] write disk at off:0 writelen:65536 datalen:65536
+[2024/11/05 10:32:25] write disk at off:61524082688 writelen:65536 datalen:65536
+[2024/11/05 10:32:25] read core.img.xz rc:0 len:455192
+[2024/11/05 10:32:25] ventoy_unxz_stg1_img len:455192 rc:0
+[2024/11/05 10:32:25] read disk.img.xz rc:0 len:13475864
+[2024/11/05 10:32:26] ventoy_unxz_efipart_img len:13475864 rc:0 unxzlen:33554432
+[2024/11/05 10:32:26] Fill MBR part table
+[2024/11/05 10:32:26] Disk signature: 0xb8da267b
+[2024/11/05 10:32:26] no need to align with 4KB
+[2024/11/05 10:32:26] ReservedSector: 0
+[2024/11/05 10:32:26] Part1StartSector:2048 Part1SectorCount:120096768 Part2StartSector:120098816
+[2024/11/05 10:32:26] Wait for format part1 (partstyle changed) ...
+[2024/11/05 10:32:27] Formatting part1 exFAT /dev/sda ...
+[0124/11/05 10:32:27] Creating... 
+[0124/11/05 10:32:27] Flushing... 
+[2024/11/05 10:32:27] Formatting part2 EFI ...
+[2024/11/05 10:32:27] Formatting part2 EFI offset:61490593792 ...
+[2024/11/05 10:32:27] VentoyProcSecureBoot 1 ...
+[2024/11/05 10:32:27] Secure boot is enabled ...
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/05 10:32:27] Writing legacy grub ...
+[2024/11/05 10:32:27] Write MBR stage1 ...
+[2024/11/05 10:32:27] lseek offset:512(512) writelen:1048064(1048064)
+[2024/11/05 10:32:27] fsync data1...
+[2024/11/05 10:32:28] Checking part2 efi data /dev/sda ...
+[2024/11/05 10:32:28] efi part data check success
+[2024/11/05 10:32:28] Writting Partition Table style:0...
+[2024/11/05 10:32:28] Writting MBR Partition Table 0 512
+[2024/11/05 10:32:28] fsync data2...
+[2024/11/05 10:32:28] ====================================
+[2024/11/05 10:32:28] ====== ventoy install success ======
+[2024/11/05 10:32:28] ====================================
+[2024/11/05 10:32:28] ventoy_disk_enumerate_all
+[2024/11/05 10:32:28] get disk info nvme0n1
+[2024/11/05 10:32:28] is 4k native disk <nvme0n1> <0>
+[2024/11/05 10:32:28] get disk size from sysfs for nvme0n1
+[2024/11/05 10:32:28] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/05 10:32:28] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/05 10:32:28] Invalid efi part2 name <>
+[2024/11/05 10:32:28] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/05 10:32:28] /dev/nvme0n1 NO Ventoy detected
+[2024/11/05 10:32:28] get disk info sda
+[2024/11/05 10:32:28] is 4k native disk <sda> <0>
+[2024/11/05 10:32:28] get disk size from sysfs for sda
+[2024/11/05 10:32:28] ventoy_get_vtoy_data /dev/sda
+[2024/11/05 10:32:28] ventoy partition layout check OK: [2048 120096768] [120098816 65536]
+[2024/11/05 10:32:28] now check secure boot for /dev/sda ...
+[2024/11/05 10:32:28] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2024/11/05 10:32:28] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/05 10:32:28] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
+[2024/11/06 18:51:16] ===============================================
+[2024/11/06 18:51:16] ===== Ventoy2Disk 1.0.99 127.0.0.1:24680 =====
+[2024/11/06 18:51:16] ===============================================
+[2024/11/06 18:51:16] ventoy_disk_enumerate_all
+[2024/11/06 18:51:16] get disk info nvme0n1
+[2024/11/06 18:51:16] is 4k native disk <nvme0n1> <0>
+[2024/11/06 18:51:16] get disk size from sysfs for nvme0n1
+[2024/11/06 18:51:16] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/06 18:51:16] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/06 18:51:16] Invalid efi part2 name <>
+[2024/11/06 18:51:16] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/06 18:51:16] /dev/nvme0n1 NO Ventoy detected
+[2024/11/06 18:51:16] get disk info sda
+[2024/11/06 18:51:16] is 4k native disk <sda> <0>
+[2024/11/06 18:51:16] get disk size from sysfs for sda
+[2024/11/06 18:51:16] ventoy_get_vtoy_data /dev/sda
+[2024/11/06 18:51:16] Invalid mbr magic 0x0 0x0
+[2024/11/06 18:51:16] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/06 18:51:16] /dev/sda NO Ventoy detected
+[2024/11/06 18:51:16] ============= DISK DUMP ============
+[2024/11/06 18:51:16] /dev/sda [64 GB]  USB  SanDisk 3.2Gen1 (USB)	Ventoy: NA
+[2024/11/06 18:51:16] /dev/nvme0n1 [512 GB]  SAMSUNG MZ9LQ512HBLU-00B (nvme)	Ventoy: NA
+[2024/11/06 18:51:37] ventoy_disk_enumerate_all
+[2024/11/06 18:51:37] get disk info nvme0n1
+[2024/11/06 18:51:37] is 4k native disk <nvme0n1> <0>
+[2024/11/06 18:51:37] get disk size from sysfs for nvme0n1
+[2024/11/06 18:51:37] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/06 18:51:37] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/06 18:51:37] Invalid efi part2 name <>
+[2024/11/06 18:51:37] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/06 18:51:37] /dev/nvme0n1 NO Ventoy detected
+[2024/11/06 18:51:37] get disk info sda
+[2024/11/06 18:51:37] is 4k native disk <sda> <0>
+[2024/11/06 18:51:37] get disk size from sysfs for sda
+[2024/11/06 18:51:37] ventoy_get_vtoy_data /dev/sda
+[2024/11/06 18:51:37] Invalid mbr magic 0x0 0x0
+[2024/11/06 18:51:37] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/06 18:51:37] /dev/sda NO Ventoy detected
+[2024/11/06 18:51:43] ==================================================================================
+[2024/11/06 18:51:43] ===== ventoy install /dev/sda style:MBR secureboot:1 align4K:1 reserve:0 =========
+[2024/11/06 18:51:43] ==================================================================================
+[2024/11/06 18:51:43] disk is not mounted now, we can do the install ...
+[2024/11/06 18:51:43] start install thread  USB  SanDisk 3.2Gen1 (USB) ...
+[2024/11/06 18:51:43] ventoy_install_thread run ...
+[2024/11/06 18:51:43] check disk sda
+[2024/11/06 18:51:43] disk is not mounted now, we can do continue ...
+[2024/11/06 18:51:43] ventoy_clean_disk fd:5 size:61524148224
+[2024/11/06 18:51:43] write disk at off:0 writelen:65536 datalen:65536
+[2024/11/06 18:51:43] write disk at off:61524082688 writelen:65536 datalen:65536
+[2024/11/06 18:51:43] read core.img.xz rc:0 len:455192
+[2024/11/06 18:51:43] ventoy_unxz_stg1_img len:455192 rc:0
+[2024/11/06 18:51:43] read disk.img.xz rc:0 len:13475864
+[2024/11/06 18:51:44] ventoy_unxz_efipart_img len:13475864 rc:0 unxzlen:33554432
+[2024/11/06 18:51:44] Fill MBR part table
+[2024/11/06 18:51:44] Disk signature: 0x6f6aa08f
+[2024/11/06 18:51:44] no need to align with 4KB
+[2024/11/06 18:51:44] ReservedSector: 0
+[2024/11/06 18:51:44] Part1StartSector:2048 Part1SectorCount:120096768 Part2StartSector:120098816
+[2024/11/06 18:51:44] Formatting part1 exFAT /dev/sda ...
+[0124/11/06 18:51:44] Creating... 
+[0124/11/06 18:51:44] Flushing... 
+[2024/11/06 18:51:44] Formatting part2 EFI ...
+[2024/11/06 18:51:44] Formatting part2 EFI offset:61490593792 ...
+[2024/11/06 18:51:44] VentoyProcSecureBoot 1 ...
+[2024/11/06 18:51:44] Secure boot is enabled ...
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] write disk writelen:1048576 datalen:1048576 [ success ]
+[2024/11/06 18:51:44] Writing legacy grub ...
+[2024/11/06 18:51:44] Write MBR stage1 ...
+[2024/11/06 18:51:44] lseek offset:512(512) writelen:1048064(1048064)
+[2024/11/06 18:51:44] fsync data1...
+[2024/11/06 18:51:45] Checking part2 efi data /dev/sda ...
+[2024/11/06 18:51:45] efi part data check success
+[2024/11/06 18:51:45] Writting Partition Table style:0...
+[2024/11/06 18:51:45] Writting MBR Partition Table 0 512
+[2024/11/06 18:51:45] fsync data2...
+[2024/11/06 18:51:45] ====================================
+[2024/11/06 18:51:45] ====== ventoy install success ======
+[2024/11/06 18:51:45] ====================================
+[2024/11/06 18:51:45] ventoy_disk_enumerate_all
+[2024/11/06 18:51:45] get disk info nvme0n1
+[2024/11/06 18:51:45] is 4k native disk <nvme0n1> <0>
+[2024/11/06 18:51:45] get disk size from sysfs for nvme0n1
+[2024/11/06 18:51:45] /sys/block/nvme0n1/device/vendor not exist 
+[2024/11/06 18:51:45] ventoy_get_vtoy_data /dev/nvme0n1
+[2024/11/06 18:51:45] Invalid efi part2 name <>
+[2024/11/06 18:51:45] disk:</dev/nvme0n1 259:0> model:< SAMSUNG MZ9LQ512HBLU-00B (nvme)> size:512110190592 (512 GB)
+[2024/11/06 18:51:45] /dev/nvme0n1 NO Ventoy detected
+[2024/11/06 18:51:45] get disk info sda
+[2024/11/06 18:51:45] is 4k native disk <sda> <0>
+[2024/11/06 18:51:45] get disk size from sysfs for sda
+[2024/11/06 18:51:45] ventoy_get_vtoy_data /dev/sda
+[2024/11/06 18:51:45] ventoy partition layout check OK: [2048 120096768] [120098816 65536]
+[2024/11/06 18:51:45] now check secure boot for /dev/sda ...
+[2024/11/06 18:51:45] /EFI/BOOT/grubx64_real.efi find, secure boot in enabled
+[2024/11/06 18:51:45] disk:</dev/sda 8:0> model:< USB  SanDisk 3.2Gen1 (USB)> size:61524148224 (64 GB)
+[2024/11/06 18:51:45] /dev/sda Ventoy:<1.0.99> MBR secureboot:1 preserve:0
